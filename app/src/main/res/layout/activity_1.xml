@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.njg_3.colororderapp.activity1.Activity1">
+
+  <android.support.v7.widget.Toolbar
+      android:layout_width="match_parent"
+      android:background="@color/colorPrimary"
+      android:layout_height="60dp">
+
+      <LinearLayout
+          android:gravity="center_vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <ImageView
+              android:layout_width="45dp"
+              android:layout_height="45dp"
+              android:src="@drawable/logo3"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/app_name"
+              android:textColor="@color/colorBlanco"
+              android:layout_marginLeft="8dp"
+              android:textSize="18sp"
+              />
+
+
+      </LinearLayout>
+
+
+
+
+  </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/colorsRecycler"
+        tools:listitem="@layout/item_color"
+        />
+
+</LinearLayout>
